@@ -1,8 +1,12 @@
 # Taller de uso basico de OCP
 ## Preparación de herramientas GIT
-Mediante un navegador web, accede al la URL http://git.apps.cluster-7z6mg.7z6mg.example.opentlc.com/user/login
+Mediante un navegador web, acceda a la URL http://git.apps.cluster-7z6mg.7z6mg.example.opentlc.com/user/login e identifiquese con sus credenciales.
 
 ![alt text](images/git_login.png?raw=true)
+
+Luego cree un nuevo repositorio haciendo click en el simbolo "+" indicado en la imagen:
+
+![alt text](images/new_repo.png?raw=true)
 
 
 ## Despliegue de aplicación web
