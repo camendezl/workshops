@@ -49,6 +49,7 @@ EOF
 ```
 
 Luego inicialice el repositorio y sincronicelo con el repositorio remoto creado anteriormente:
+```
 $ git init
 $ git add index.html
 $ git commit -m "first commit"
