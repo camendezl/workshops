@@ -1,5 +1,12 @@
 # Taller de uso basico de OCP
+## Preparación de herramientas GIT
+Mediante un navegador web, accede al la URL http://git.apps.cluster-7z6mg.7z6mg.example.opentlc.com/user/login
+
+![alt text](images/git_login.png?raw=true)
+
+
 ## Despliegue de aplicación web
+
 Ingrese al servidor bastión via SSH. En el siguiente comando debe reemplazar el valor de <userX> por el valor de usuario asignado:
 ```
 $ ssh <userX>@bastion.7z6mg.example.opentlc.com
@@ -10,7 +17,7 @@ Inicie sesión en OpenShift mediante la CLI (comando oc). Debido a que la plataf
 $ oc login -u  ${USER} -p r3dh4t1! https://api.cluster-7z6mg.7z6mg.example.opentlc.com:6443'
 ```
 
-Luego de la confirmación del login, cree un nuevo proyecto utilizando el siguiente comando:
+Cree un nuevo proyecto utilizando el siguiente comando:
 ```
 $ oc new-project myapp-${USER}
 ```
