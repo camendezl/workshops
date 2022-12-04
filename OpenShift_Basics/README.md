@@ -63,6 +63,6 @@ oc logs -f buildconfig.build.openshift.io/myapp
 
 Una vez terminado el proceso anterior, verifique que la versión del BuildConfig se haya cambiado a 2, se haya generado un segundo un segundo pod del build y se haya actualizado el POD de la aplicación:
 
-![alt text](https://github.com/camendezl/workshops/blob/main/build2.png?raw=true)
+![alt text](images/build2.png?raw=true)
 
 
