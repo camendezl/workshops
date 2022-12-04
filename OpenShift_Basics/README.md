@@ -15,11 +15,13 @@ oc new-app httpd~http://git.apps.cluster-7z6mg.7z6mg.example.opentlc.com/${USER}
 Puede visualizar los logs del proceso de construcción de la imagen (build) ejecutando el siguiente comando:
 oc logs -f buildconfig.build.openshift.io/myapp
 
-Para visualizar todos los recursos de OpenShift generados por el comando anterior, ejecute:
+Para visualizar todos los recursos de OpenShift generados por el comando anterior, ejecute lo siguiente. Note que no existe una ruta (recurso route)  generada para acceder a la aplicación desde internet:
 oc get all
 
 Cree la ruta para exponer su aplicación en internet:
 oc expose service myapp
+
+![alt text](images/build1.png?raw=true)
 
 Consulte la ruta que se creo previamente:
 oc get routes
