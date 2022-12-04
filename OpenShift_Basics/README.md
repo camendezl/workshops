@@ -22,6 +22,10 @@ Cree una carpeta para almacenar el codigo, y luego inicialice el repositorio git
 ```
 $ mkdir myapp
 $ cd myapp
+```
+
+Cree el archivo index.html:
+```
 $ cat <<EOF >> index.html
 <html>
 <body lang="es-MX" dir="ltr">
@@ -42,6 +46,9 @@ $ cat <<EOF >> index.html
 </body>
 </html>
 EOF
+```
+
+Luego inicialice el repositorio y sincronicelo con el repositorio remoto creado anteriormente:
 $ git init
 $ git add index.html
 $ git commit -m "first commit"
@@ -49,12 +56,14 @@ $ git remote add origin http://git.apps.cluster-7z6mg.7z6mg.example.opentlc.com/
 $ git push -u origin master
 ```
 
+Se le preguntará por los datos de su usuario, los cuales deberá ingresar.
+
+## Despliegue de aplicación web
+
 Inicie sesión en OpenShift mediante la CLI (comando oc). Debido a que la plataforma cuenta con certificados autofirmados, la CLI preguntará si se debe usar una conexión insegura, por lo que ebe responder con "y" y luego enter:
 ```
 $ oc login -u  ${USER} -p r3dh4t1! https://api.cluster-7z6mg.7z6mg.example.opentlc.com:6443'
 ```
-
-## Despliegue de aplicación web
 
 Cree un nuevo proyecto utilizando el siguiente comando:
 ```
