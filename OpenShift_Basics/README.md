@@ -18,10 +18,10 @@ oc logs -f buildconfig.build.openshift.io/myapp
 Para visualizar todos los recursos de OpenShift generados por el comando anterior, ejecute lo siguiente. Note que no existe una ruta (recurso route)  generada para acceder a la aplicación desde internet:
 oc get all
 
+![alt text](images/build1.png?raw=true)
+
 Cree la ruta para exponer su aplicación en internet:
 oc expose service myapp
-
-![alt text](images/build1.png?raw=true)
 
 Consulte la ruta que se creo previamente:
 oc get routes
