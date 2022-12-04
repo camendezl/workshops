@@ -50,8 +50,9 @@ $ curl http://myapp-myapp-${USER}.apps.cluster-7z6mg.7z6mg.example.opentlc.com
 ## Actualice el nombre del autor de la aplicación web
 Clone el codigo fuente del repositorio GIT que utilizo para el despliegue de la aplicación, e ingrese al directorio:
 ```
+$ cd ~
 $ git clone http://git.apps.cluster-7z6mg.7z6mg.example.opentlc.com/${USER}/myapp
-cd myapp
+$ cd myapp
 ```
 
 Sustituya el valor "Desconocido" en el archivo index.html por su nombre:
@@ -104,8 +105,10 @@ $ oc get all
 
 ![alt text](images/build2.png?raw=true)
 
-Para finalizar el ejercicio, elimine la aplicación creada ejecutando el siguiente comando:
+Para finalizar el ejercicio, elimine la aplicación de OpenShift y realice limpieza de los archivos generados ejecutando el siguiente comando:
 ```
 $ oc delete project myapp-${USER}
+$ cd ~/
+$ rm -rf myapp/
 ```
 
