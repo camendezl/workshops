@@ -98,7 +98,7 @@ Consulte la ruta que se creo previamente:
 $ oc get routes
 ```
 
-Y acceda a la URL anteponiendo http://. Puede accederla tambien mediante un navegador web, pero recuerde reemplazar la variable ${USER} por el nombre de su usuario.
+Y acceda a la URL anteponiendo http://. Puede utilizar el comando curl siguiente desde la consola, o utilizar un navegador web para acceder a la ruta generada.
 ```
 $ curl http://myapp-myapp-${USER}.apps.cluster-7z6mg.7z6mg.example.opentlc.com
 ```
