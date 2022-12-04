@@ -8,6 +8,10 @@ Luego cree un nuevo repositorio haciendo click en el simbolo "+" indicado en la 
 
 ![alt text](images/new_repo.png?raw=true)
 
+Luego digite el nombre de "myapp" en el campo "Repository Name", y luego haga click en el boton verde "Create Repository":
+
+![alt text](images/create_repo.png?raw=true)
+
 
 ## Despliegue de aplicación web
 
