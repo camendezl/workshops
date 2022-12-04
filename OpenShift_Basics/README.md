@@ -103,8 +103,14 @@ Y acceda a la URL anteponiendo http://. Puede utilizar el comando curl siguiente
 $ curl http://myapp-myapp-${USER}.apps.cluster-7z6mg.7z6mg.example.opentlc.com
 ```
 
+Realice limpieza a los archivos generados:
+```
+$ cd ~/
+$ rm -rf myapp/
+```
+
 ## Actualice el nombre del autor de la aplicación web
-Clone el codigo fuente del repositorio GIT que utilizo para el despliegue de la aplicación, e ingrese al directorio:
+Dado que el codigo local fue eliminado, es necesario obtener el codigo directamente del repositorio Git. Para ello, clone el codigo fuente del repositorio GIT que utilizo para el despliegue de la aplicación, e ingrese al directorio:
 ```
 $ cd ~
 $ git clone http://git.apps.cluster-7z6mg.7z6mg.example.opentlc.com/${USER}/myapp
