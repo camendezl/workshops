@@ -1,8 +1,8 @@
 # Taller de uso basico de OCP
 ## Despliegue de aplicación web
-Ingrese al servidor bastión via SSH:
+Ingrese al servidor bastión via SSH. En el siguiente comando debe reemplazar el valor de <userX> por el valor de usuario asignado:
 ```
-$ ssh userX@bastion.7z6mg.example.opentlc.com
+$ ssh <userX>@bastion.7z6mg.example.opentlc.com
 ```
 
 Inicie sesión en OpenShift mediante la CLI (comando oc). Debido a que la plataforma cuenta con certificados autofirmados, la CLI preguntará si se debe usar una conexión insegura, por lo que ebe responder con "y" y luego enter:
