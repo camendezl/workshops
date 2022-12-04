@@ -104,4 +104,8 @@ $ oc get all
 
 ![alt text](images/build2.png?raw=true)
 
+Para finalizar el ejercicio, elimine la aplicación creada ejecutando el siguiente comando:
+```
+$ oc delete project myapp-${USER}
+```
 
