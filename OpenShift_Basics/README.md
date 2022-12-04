@@ -4,7 +4,9 @@ Ingrese al servidor bastión via SSH:
 ssh userX@bastion.7z6mg.example.opentlc.com
 
 Inicie sesión en OpenShift mediante la CLI (comando oc). Debido a que la plataforma cuenta con certificados autofirmados, la CLI preguntará si se debe usar una conexión insegura, por lo que ebe responder con "y" y luego enter:
-oc login -u  ${USER} -p r3dh4t1! https://api.cluster-7z6mg.7z6mg.example.opentlc.com:6443'
+```
+$ oc login -u  ${USER} -p r3dh4t1! https://api.cluster-7z6mg.7z6mg.example.opentlc.com:6443'
+```
 
 Luego de la confirmación del login, cree un nuevo proyecto utilizando el siguiente comando:
 oc new-project myapp-${USER}
