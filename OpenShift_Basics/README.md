@@ -12,18 +12,45 @@ Luego digite el nombre de "myapp" en el campo "Repository Name", y luego haga cl
 
 ![alt text](images/create_repo.png?raw=true)
 
-
-## Despliegue de aplicación web
+Ahora genere el codigo que se almacenará en el repositorio web. Para ello, sebera ingresar al servidor bastión que contiene todas las herramientas necesarias, tales como la CLI de OpenShift y la herramienta git:
 
 Ingrese al servidor bastión via SSH. En el siguiente comando debe reemplazar el valor de <userX> por el valor de usuario asignado:
 ```
 $ ssh <userX>@bastion.7z6mg.example.opentlc.com
+```
+Cree una carpeta para almacenar el codigo, y luego inicialice el repositorio git creado anteriormente:
+```
+$ mkdir myapp
+$ cd myapp
+$ cat <<EOF >> index.html
+<html>
+<body lang="es-MX" dir="ltr">
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"> 
+<img src="https://www.redhat.com/cms/managed-files/Logo-redhat-color-375.png" name="Image1" align="bottom" width="399" height="116" border="0"/>
+</p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font size="6" style="font-size: 26pt">WorkShop OpenShift v4 - Claro Ecuador - Diciembre 2022</font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font size="6" style="font-size: 26pt">Autor: Desconocido.</font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+</body>
+</html>
+EOF
+$ git init
 ```
 
 Inicie sesión en OpenShift mediante la CLI (comando oc). Debido a que la plataforma cuenta con certificados autofirmados, la CLI preguntará si se debe usar una conexión insegura, por lo que ebe responder con "y" y luego enter:
 ```
 $ oc login -u  ${USER} -p r3dh4t1! https://api.cluster-7z6mg.7z6mg.example.opentlc.com:6443'
 ```
+
+## Despliegue de aplicación web
 
 Cree un nuevo proyecto utilizando el siguiente comando:
 ```
