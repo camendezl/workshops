@@ -43,6 +43,10 @@ $ cat <<EOF >> index.html
 </html>
 EOF
 $ git init
+$ git add index.html
+$ git commit -m "first commit"
+$ git remote add origin http://git.apps.cluster-7z6mg.7z6mg.example.opentlc.com/${USER}/myapp.git
+$ git push -u origin master
 ```
 
 Inicie sesión en OpenShift mediante la CLI (comando oc). Debido a que la plataforma cuenta con certificados autofirmados, la CLI preguntará si se debe usar una conexión insegura, por lo que ebe responder con "y" y luego enter:
