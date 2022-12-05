@@ -14,4 +14,10 @@ Ingrese a la pestaña "Storage Systems" y luego haga click en el nombre "ocs-sto
 
 ![alt text](images/ss.png?raw=true)
 
+En la ventana que cargo, intente responder las siguientes preguntas:
+* ¿Puede determinar cuando espacio disponible tiene ODF?
+* ¿Y cuanto tiene ocupado?
+* ¿Puede encontrar en el dashboard los tipos de almacenamiento que proporciona ODF? (¿Block,File System and object storage?)
+* ¿Puede identificar que proyectos esta consumiendo almacenamiento de ODF?
 
+En la 
