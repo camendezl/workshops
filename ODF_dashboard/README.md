@@ -15,9 +15,15 @@ Ingrese a la pestaña "Storage Systems" y luego haga click en el nombre "ocs-sto
 ![alt text](images/ss.png?raw=true)
 
 En la ventana que cargo, intente responder las siguientes preguntas:
+* ¿Puede identificar rapidamente cual es el estado del cluster de ODF? (Recuerde que ODF se basa en el software oepn source Ceph Storage)
 * ¿Puede determinar cuando espacio disponible tiene ODF?
 * ¿Y cuanto tiene ocupado?
 * ¿Puede encontrar en el dashboard los tipos de almacenamiento que proporciona ODF? (¿Block,File System and object storage?)
 * ¿Puede identificar que proyectos esta consumiendo almacenamiento de ODF?
+* ¿Puede identificar cuantos PersistentVolumeClaims (PVCs) y PersistentVolumes (PVs) ODF tiene desplegado? (Revise la sección "Inventory")
 
-En la 
+En la sessión "Used Capacity Breakdown", seleccione "Pods" en lugar de "Projects". Identifique el nombre del POD que esta consumiendo espacio de ODF.
+
+![alt text](images/pod_used.png?raw=true)
+
+
