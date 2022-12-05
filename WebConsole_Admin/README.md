@@ -1,5 +1,7 @@
 # Navegación de la consola web de OpenShift - Perpectiva Administrator
 
+## Visualizar paneles exclusivos del administrador
+
 Ingrese a la consola web de OpenShift desde un navegador web a la URL https://console-openshift-console.apps.cluster-7z6mg.7z6mg.example.opentlc.com. 
 
 En el campo de usuario, coloque el usuario asignado + 100. Por ejemplo, si su usuario es user18, entonces ingrese con el usuario user118. El password es el mismo "r3dh4t1!". **IMPORTANTE**: Este usuario tiene permisos de administrador del cluster, **por lo tanto NO REALICE modificaciones no solicitadas en éste taller.** Recuerde que este laboratorio de OpenShift es necesario para los futuros talleres.
@@ -33,5 +35,13 @@ Ingrese a Administration > Cluster Settings en el panel izquierdo. Identifique l
 Ingrese a la pestaña Cluster Operators. Identifique el nombre de los operadores y la versión. Como se ha mencionado durante el WorkShop, todas las funcionalidades del cluster estan contenerizadas y son gestionadas por los operadores del cluster. Adicional, la versión de **TODOS** los operadores deben coincidir con la versión de OpenShift (obtenida en el punto anterior). Si no coinciden, se considera que el cluster esta en proceso de actualización o transición de versión.
 
 ![alt text](images/clusteroperators.png?raw=true)
+
+## Revisión y conexion con nodos de OpenShift
+
+Ingrese a Compute > Nodes en el panel izquierdo. Identique en la pantalla la totalidad de nodos que componen el cluster, su rol (Master o Worker) y los recursos de hardware usados y disponibles.
+
+Haga click sobre cualquiera de los nodos, y luego haga click en la pestaña "Terminal".
+
+![alt text](images/connect_node.png?raw=true)
 
 
