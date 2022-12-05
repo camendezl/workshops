@@ -75,4 +75,8 @@ $ tcpdump --version
 * ¿**Que sucedio con tcpdump**?
 * ¿**Puede imaginar porque las versiones son diferentes**?
 
-Si tiene dudas al respecto, comentelas con el instructor
+Si tiene dudas al respecto, comentelas con el instructor.
+
+Por ultimo, cambie la vista a la perspectiva de administrador y observe las opciones disponibles en el panel de navegación.
+
+Finalice la sesión haciendo click sobre el nombre del usuario en la esquina superior derecha de la pantalla, y luego "Log out".
