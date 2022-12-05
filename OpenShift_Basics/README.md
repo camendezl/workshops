@@ -78,7 +78,7 @@ $ kubectl new-app httpd~http://git.apps.cluster-7z6mg.7z6mg.example.opentlc.com/
 
 ¿Cual fue la causa por la que fallo la ejecución del comando?
 
-Luego, ejecute el comando anterior sustituyendo el comando "kubectl" por "oc". El comando seria como el siguiente:
+Luego, ejecute la linea anterior sustituyendo el comando "kubectl" por "oc". El comando debe quedar como el siguiente:
 ```
 $ oc new-app httpd~http://git.apps.cluster-7z6mg.7z6mg.example.opentlc.com/${USER}/myapp
 ```
