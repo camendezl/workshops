@@ -64,5 +64,5 @@ Y verifique nuevamente la versión del sistema operativo:
 $ cat /etc/os-release
 ```
 
-* **¿Es la misma version del sistema operativo?
-* ¿Puede imaginar porque las versiones son diferentes?**
+* ¿**Es la misma version del sistema operativo**?
+* ¿**Puede imaginar porque las versiones son diferentes**?
