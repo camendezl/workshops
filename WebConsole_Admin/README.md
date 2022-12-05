@@ -52,19 +52,27 @@ $ cat /etc/os-release
 
 La versión completa del OS se encuentra en la variable PRETTY_NAME. Recuerdela.
 
+***tcpdump*** es un analizador de trafico de red muy usado en entornos linux, que permite el analisis de trafico en las tarjetas de red de un sistema. Ejecute el siguiente comando para determinal la versión de tcpdump instalada: 
+
+```
+$ tcpdump --version
+```
+
 Ahora, ejecute el siguiente comando en la terminal del nodo:
 
 ```
 $ chroot /host
 ```
 
-Y verifique nuevamente la versión del sistema operativo:
+Y verifique nuevamente la versión del sistema operativo y de tcpdump:
 
 ```
 $ cat /etc/os-release
+$ tcpdump --version
 ```
 
-* ¿**Es la misma version del sistema operativo**?
+* ¿**Que sucedio con la version del sistema operativo**?
+* ¿**Que sucedio con tcpdump**?
 * ¿**Puede imaginar porque las versiones son diferentes**?
 
 Si tiene dudas al respecto, comentelas con el instructor
