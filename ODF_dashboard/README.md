@@ -26,4 +26,6 @@ En la sessión "Used Capacity Breakdown", seleccione "Pods" en lugar de "Project
 
 ![alt text](images/pod_used.png?raw=true)
 
+Luego cambie a la pestaña "BlockPools" e identifique la cantidad de replicas. En pocas palabras, el valor de las replicas indica la cantidad copias de la información hace ODF en su instalación por defecto.
 
+![alt text](images/blockpools.png?raw=true)
