@@ -1,4 +1,4 @@
-# Taller de uso basico de OCP
+# Taller de uso basico de CLI de OpenShift y Git
 ## Preparación de herramientas GIT
 Mediante un navegador web, acceda a la URL http://git.apps.cluster-7z6mg.7z6mg.example.opentlc.com/user/login e identifiquese con sus credenciales.
 
