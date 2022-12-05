@@ -10,4 +10,12 @@ La plagina que despliega su navegador puede ser levemente diferente a la que se 
 
 En su computador, identifique la ubicación de las siguientes áreas:
 1. Seleccionador de perspectiva
-2. 2. 
+2. Arbol de opciones.
+3. Detalles de la instalación del cluster de OpenShift.
+4. Inventario del cluster.
+5. Estado de los componentes del cluster.
+6. Alertas activas en el cluster.
+7. Estado de recursos del cluster (sumatoria de los recursos de todos los nodos).
+8. Ultimos eventos sobre la plataforma.
+
+
