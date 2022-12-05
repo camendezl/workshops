@@ -66,3 +66,5 @@ $ cat /etc/os-release
 
 * ¿**Es la misma version del sistema operativo**?
 * ¿**Puede imaginar porque las versiones son diferentes**?
+
+Si tiene dudas al respecto, comentelas con el instructor
