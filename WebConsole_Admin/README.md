@@ -38,10 +38,31 @@ Ingrese a la pestaña Cluster Operators. Identifique el nombre de los operadores
 
 ## Revisión y conexion con nodos de OpenShift
 
-Ingrese a Compute > Nodes en el panel izquierdo. Identique en la pantalla la totalidad de nodos que componen el cluster, su rol (Master o Worker) y los recursos de hardware usados y disponibles.
+Ingrese a Compute > Nodes en el panel izquierdo. Identique en la pantalla la totalidad de nodos que componen el cluster, su rol (Master o Worker) y los recursos de hardware usados / disponibles.
 
 Haga click sobre cualquiera de los nodos, y luego haga click en la pestaña "Terminal".
 
 ![alt text](images/connect_node.png?raw=true)
 
+Una vez abierta la terminal en el nodo, identifique la versión del sistema operativo que ejecuta la terminal. Para saberlo un metodo efectivo es visualizar el contenido del archivo /etc/os-release. Para ello, ejecute el siguiente comando en la terminal del nodo:
 
+```
+$ cat /etc/os-release
+```
+
+La versión completa del OS se encuentra en la variable PRETTY_NAME. Recuerdela.
+
+Ahora, ejecute el siguiente comando en la terminal del nodo:
+
+```
+$ chroot /host
+```
+
+Y verifique nuevamente la versión del sistema operativo:
+
+```
+$ cat /etc/os-release
+```
+
+* **¿Es la misma version del sistema operativo?
+* ¿Puede imaginar porque las versiones son diferentes?**
