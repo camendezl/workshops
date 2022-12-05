@@ -12,11 +12,11 @@ Luego digite el nombre de "myapp" en el campo "Repository Name", y luego haga cl
 
 ![alt text](images/create_repo.png?raw=true)
 
-Ahora genere el codigo que se almacenará en el repositorio web. Para ello, sebera ingresar al servidor bastión que contiene todas las herramientas necesarias, tales como la CLI de OpenShift y la herramienta git:
+Ahora genere el codigo que se almacenará en el repositorio web. Para ello, debera ingresar al servidor bastión que contiene todas las herramientas necesarias, tales como la CLI de OpenShift y la herramienta git:
 
-Ingrese al servidor bastión via SSH. En el siguiente comando debe reemplazar el valor de <userX> por el valor de usuario asignado:
+Ingrese al servidor bastión via SSH. En el siguiente comando debe reemplazar el valor de "userX" por el valor de usuario asignado:
 ```
-$ ssh <userX>@bastion.7z6mg.example.opentlc.com
+$ ssh userX@bastion.7z6mg.example.opentlc.com
 ```
 Cree una carpeta para almacenar el codigo, y luego inicialice el repositorio git creado anteriormente:
 ```
