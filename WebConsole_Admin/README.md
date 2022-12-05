@@ -10,7 +10,7 @@ La plagina que despliega su navegador puede ser levemente diferente a la que se 
 
 En su computador, identifique la ubicación de las siguientes áreas:
 1. Seleccionador de perspectiva
-2. Arbol de navegación.
+2. Panel de navegación.
 3. Detalles de la instalación del cluster de OpenShift.
 4. Inventario del cluster.
 5. Estado de los componentes del cluster.
@@ -18,11 +18,17 @@ En su computador, identifique la ubicación de las siguientes áreas:
 7. Estado de recursos del cluster (sumatoria de los recursos de todos los nodos).
 8. Ultimos eventos sobre la plataforma.
 
-En el arbol de navegación del panel izquierdo, ingrese a Operators > Operatorhub. Desplace la barrar vertical de la izquiera para poder visualizar la cantidad de operadores que el catalogo de OpenShift proporciona.
+En el panel de navegación del panel izquierdo, ingrese a Operators > Operatorhub. Desplace la barrar vertical de la izquiera para poder visualizar la cantidad de operadores que el catalogo de OpenShift proporciona.
 
 ![alt text](images/operatorhub.png?raw=true)
 
 Identifique los operadores instalados en el cluster de OpenShift ingresando a Operators > Installed Operators.
 
 ![alt text](images/installedoperators.png?raw=true)
+
+Ingrese a Administration > Cluster Settings en el panel izquierdo. Identifique la version de OpenShift desplegada en el cluster. **¿Encuentra versiones disponibles para instalar?**
+
+
+![alt text](images/update_status.png?raw=true)
+
 
