@@ -71,10 +71,19 @@ Cree un nuevo proyecto utilizando el siguiente comando:
 $ oc new-project myapp-${USER}
 ```
 
-Por ultimo, ejecute el siguiente comando para desplegar una aplicaion web contenerizada en OpenShift:
+Ahora, intente desplegar la aplicación tal cual lo haria en OpenShift pero usando la CLI de kubernetes. El comando seria como el siguiente:
+```
+$ kubectl new-app httpd~http://git.apps.cluster-7z6mg.7z6mg.example.opentlc.com/${USER}/myapp
+```
+
+¿Cual fue la causa por la que fallo la ejecución del comando?
+
+Luego, ejecute el comando anterior sustituyendo el comando "kubectl" por "oc". El comando seria como el siguiente:
 ```
 $ oc new-app httpd~http://git.apps.cluster-7z6mg.7z6mg.example.opentlc.com/${USER}/myapp
 ```
+
+¿Se desplego la aplicación?
 
 Puede visualizar los logs del proceso de construcción de la imagen (build) ejecutando el siguiente comando:
 ```
@@ -87,6 +96,19 @@ $ oc get all
 ```
 
 ![alt text](images/build1.png?raw=true)
+
+Realice ahora la misma verificación utilizando CLI de kubernetes kubectl. ¿Encuentra alguna diferencia?
+```
+kubectl get all
+```
+
+Ahora, ejecute los siguientes comandos y compare las salidas.
+```
+$ oc project
+$ kubectl project
+```
+
+¿Puede concluir algo respecto de la CLI de OpenShift (oc) y la CLI de kubernetes (kubectl)?
 
 Cree la ruta para exponer su aplicación en internet:
 ```
