@@ -45,8 +45,44 @@ $ tcpdump --version
 
 Si tiene dudas al respecto, comentelas con el instructor.
 
-Por ultimo, cambie la vista a la perspectiva de administrador y observe las opciones disponibles en el panel de navegación. Seleccione la opcion "Topology" y en la opcion "Project", seleccione "All Projects". Note que tiene acceso a todos los proyectos desplegados en OpenShift (**No realice cambios en los proyectos**).
+Ahora que conoce que esta dentro del sistema Red Hat CoreOS, puede realizar algunas labores de inspección (recuerde que este acceso es proporcionado por Red Hat **solo** por temas relativos a troubleshooting y los cambios directos sobre el sistema no son soportados).
 
-![alt text](images/all_projects.png?raw=true)
+Como se menciono anteriormente, RHCOS esta basado tambien en RHEL 8, por lo tanto muchos de los comandos que se tienen en RHEL tambien funcionan aqui. Por ejemplo, ejecute el siguiente comando para ver el estado de todas las interfaces de red:
+
+```
+$ ip addr
+```
+
+Con el siguiente comando puede visualizar los registros (o logs) del sistema en tiempo real:
+
+```
+$ journalctl -f
+```
+
+Para finalizar el comando, presione las teclas Crtl + c.
+
+Cualquier contenedor que se ejecute en los nodos tiene que haber descargado su imagen correspondiente del Registry al disco local. Ejecute el siguiente comando para visualizar todas las imagenes descargadas en disco. Puede utilizar la barra de desplazamiento vertical para visualizar todos los registros. Note que el tamaño de las imagenes es relativamente pequeño (entre 300 y 500 MB).
+
+```
+$ podman images 
+```
+
+Con el siguiente comando puede listar todos los contenedores que se encuentran en ejecución. Valide los nombres de los contenedores en la columna "NAME" y trate de relacionar algunos de ellos con la funcionalidad que proporciona al cluster de OpenShift.
+
+```
+$ crictl ps 
+```
+
+Puede inspeccionar los logs de los contenedores con el comando crictl. Ejecute el siguiente comando proporcionando como parámetro el ID (valor de 13 caracteres que aparece en la primera columna) del contenedor que quiera visualizar sus logs. Reemplaza ID por el valor correspondiente:
+
+```
+$ crictl logs ID
+```
+
+Puede visualizar logs en tiempo real adicionando "-f" al comando:
+
+```
+$ crictl logs -f ID
+```
 
 Finalice la sesión haciendo click sobre el nombre del usuario en la esquina superior derecha de la pantalla, y luego "Log out".
