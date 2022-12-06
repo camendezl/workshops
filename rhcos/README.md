@@ -64,14 +64,14 @@ Para finalizar el comando, presione las teclas Crtl + c.
 Puede verificar el estado de los unicos servicios del sistema mediante la ejecución de los siguientes comandos:
 
 Kubelet:
-´´´
+```
 $ systemctl status kubelet
-´´´
+```
 
 Crio:
-´´´
+```
 $ systemctl status crio
-´´´
+```
 
 Cualquier contenedor que se ejecute en los nodos tiene que haber descargado su imagen correspondiente del Registry al disco local. Ejecute el siguiente comando para visualizar todas las imagenes descargadas en disco. Puede utilizar la barra de desplazamiento vertical para visualizar todos los registros. Note que el tamaño de las imagenes es relativamente pequeño (entre 300 y 500 MB).
 
