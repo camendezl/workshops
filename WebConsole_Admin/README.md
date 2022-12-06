@@ -36,48 +36,7 @@ Ingrese a la pestaña Cluster Operators. Identifique el nombre de los operadores
 
 ![alt text](images/clusteroperators.png?raw=true)
 
-## Revisión y conexion con nodos de OpenShift
-
-Ingrese a Compute > Nodes en el panel izquierdo. Identique en la pantalla la totalidad de nodos que componen el cluster, su rol (Master o Worker) y los recursos de hardware usados / disponibles.
-
-Haga click sobre cualquiera de los nodos, y luego haga click en la pestaña "Terminal".
-
-![alt text](images/connect_node.png?raw=true)
-
-Una vez abierta la terminal en el nodo, identifique la versión del sistema operativo que ejecuta la terminal. Para saberlo un metodo efectivo es visualizar el contenido del archivo /etc/os-release. Para ello, ejecute el siguiente comando en la terminal del nodo:
-
-```
-$ cat /etc/os-release
-```
-
-La versión completa del OS se encuentra en la variable PRETTY_NAME. Recuerdela.
-
-***tcpdump*** es un analizador de trafico de red muy usado en entornos linux, que permite el analisis de trafico en las tarjetas de red de un sistema. Ejecute el siguiente comando para determinal la versión de tcpdump instalada: 
-
-```
-$ tcpdump --version
-```
-
-Ahora, ejecute el siguiente comando en la terminal del nodo:
-
-```
-$ chroot /host
-```
-
-Y verifique nuevamente la versión del sistema operativo y de tcpdump:
-
-```
-$ cat /etc/os-release
-$ tcpdump --version
-```
-
-* ¿**Que sucedio con la version del sistema operativo**?
-* ¿**Que sucedio con tcpdump**?
-* ¿**Puede imaginar porque las versiones son diferentes**?
-
-Si tiene dudas al respecto, comentelas con el instructor.
-
-Por ultimo, cambie la vista a la perspectiva de administrador y observe las opciones disponibles en el panel de navegación. Seleccione la opcion "Topology" y en la opcion "Project", seleccione "All Projects". Note que tiene acceso a todos los proyectos desplegados en OpenShift (**No realice cambios en los proyectos**).
+Por ultimo, cambie la vista a la perspectiva "Developer" y observe las opciones disponibles en el panel de navegación. Seleccione la opcion "Topology" y en la opcion "Project", seleccione "All Projects". Note que tiene acceso a todos los proyectos desplegados en OpenShift (**No realice cambios en los proyectos**). Lo anterior se debe a que el usuario que esta utilizando para ingresar a la plataforma tiene rol de cluster-admin (administrador de plataforma).
 
 ![alt text](images/all_projects.png?raw=true)
 
