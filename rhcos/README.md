@@ -6,7 +6,7 @@ En el campo de usuario, coloque el usuario asignado + 100. Por ejemplo, si su us
 
 Ingrese a Compute > Nodes en el panel izquierdo. Identique en la pantalla la totalidad de nodos que componen el cluster, su rol (Master o Worker) y los recursos de hardware usados / disponibles.
 
-Haga click sobre cualquiera de los nodos, y luego haga click en la pestaña "Terminal".
+Haga click sobre cualquiera de los servidores "master", y luego haga click en la pestaña "Terminal".
 
 ![alt text](images/connect_node.png?raw=true)
 
@@ -60,6 +60,18 @@ $ journalctl -f
 ```
 
 Para finalizar el comando, presione las teclas Crtl + c.
+
+Puede verificar el estado de los unicos servicios del sistema mediante la ejecución de los siguientes comandos:
+
+Kubelet:
+´´´
+$ systemctl status kubelet
+´´´
+
+Crio:
+´´´
+$ systemctl status crio
+´´´
 
 Cualquier contenedor que se ejecute en los nodos tiene que haber descargado su imagen correspondiente del Registry al disco local. Ejecute el siguiente comando para visualizar todas las imagenes descargadas en disco. Puede utilizar la barra de desplazamiento vertical para visualizar todos los registros. Note que el tamaño de las imagenes es relativamente pequeño (entre 300 y 500 MB).
 
