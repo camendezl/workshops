@@ -1,4 +1,4 @@
-# Navegación de la consola web de OpenShift - Perpectiva Administrator
+# Navegación de la consola web de OpenShift - Perspectiva Administrator
 
 ## Visualizar paneles exclusivos del administrador
 
@@ -77,6 +77,8 @@ $ tcpdump --version
 
 Si tiene dudas al respecto, comentelas con el instructor.
 
-Por ultimo, cambie la vista a la perspectiva de administrador y observe las opciones disponibles en el panel de navegación.
+Por ultimo, cambie la vista a la perspectiva de administrador y observe las opciones disponibles en el panel de navegación. Seleccione la opcion "Topology" y en la opcion "Project", seleccione "All Projects". Note que tiene acceso a todos los proyectos desplegados en OpenShift (**No realice cambios en los proyectos**).
+
+![alt text](images/all_projects.png?raw=true)
 
 Finalice la sesión haciendo click sobre el nombre del usuario en la esquina superior derecha de la pantalla, y luego "Log out".
