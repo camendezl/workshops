@@ -18,6 +18,8 @@ Una vez abierta la terminal en el nodo, identifique la versión del sistema oper
 $ cat /etc/os-release
 ```
 
+![alt text](images/os_release.png?raw=true)
+
 La versión completa del OS se encuentra en la variable PRETTY_NAME. Recuerdela.
 
 ***tcpdump*** es un analizador de trafico de red muy usado en entornos linux, que permite el analisis de trafico en las tarjetas de red de un sistema. Ejecute el siguiente comando para determinal la versión de tcpdump instalada: 
