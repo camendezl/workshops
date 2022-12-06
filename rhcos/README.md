@@ -83,7 +83,12 @@ Cualquier contenedor que se ejecute en los nodos tiene que haber descargado su i
 $ podman images 
 ```
 
-Con el siguiente comando puede listar todos los contenedores que se encuentran en ejecución. Valide los nombres de los contenedores en la columna "NAME" y trate de relacionar algunos de ellos con la funcionalidad que proporciona al cluster de OpenShift.
+Con el siguiente comando puede listar todos los contenedores que se encuentran en ejecución. Valide los nombres de los contenedores en la columna "NAME" y trate de relacionar algunos de ellos con la funcionalidad que proporciona al cluster de OpenShift. Identifique principalmente los siguientes:
+* etcd
+* kube-scheduler
+* kube-controller-manager
+* kube-apiserver
+* openshift-apiserver  
 
 ```
 $ crictl ps 
