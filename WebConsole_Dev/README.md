@@ -25,11 +25,44 @@ Luego haga click sobre la URL de la ruta. Se debe abrir la pagina donde esta pub
 
 ![alt text](images/app_example.png?raw=true)
 
-## Creación de una aplicación web a partir del codigo fuente
+## Self-service - Creación de una aplicación web a partir del codigo fuente.
 
-Ingrese a la opción "+Add" del panel izquierdo, y luego  
+Ingrese a la opción "+Add" del panel izquierdo, y luego haga click en el menú desplegable "Project". Seleccione la opción "Create Project" para crear un nuevo projecto, y nombrelo como newapp-"userXX". Ej: newapp-user50. Luego click en el botón crear.
 
 ![alt text](images/create_project.png?raw=true)
 ![alt text](images/new_project.png?raw=true)
 
+En la casilla del catalogo de desarrollador (Catalog Developer), pulse sobre "All services" para acceder al catalogo de aplicaciones de OpenShift.
 
+![alt text](images/catalog.png?raw=true)
+
+Navegue por el catalogo e identifique algunas de las aplicaciones que pueden ser desplegadas a modo Self Service por parte de los desarrolladores.
+
+Busque dentro del catalogo una aplicación llamada "CakePHP + MySQL" (seleccione la que NO dice "Ephemeral"), y haga click sobre ella. Asegurese de leer la descripción para entender el tipo de aplicación que desplegará en OpenShift. Luego pulse el botón "instantiate Template".
+
+![alt text](images/instantiate.png?raw=true)
+
+Note el formulario que se despliega con las opciones disponibles. Intente identificar los siguiente datos:
+1. El proyecto donde se desplegará la app.
+2. La versión de la imagen PHP que se usará para construir la app.
+3. El limite de memoria que se asignará al POD del frontend y al pod de la BD MySQL.
+4. El tamaño del volumen que se creará para alojar la base de datos.
+5. La URL del repositorio git que contiene el codigo fuente de la app. Opcional: copie la URL y abrala. El codigo fuente esta alojado en un repositorio publico en internet de GitHub.
+
+No realice cambios y dirijase al final del formulario, luego presione el botón "Create".
+
+Luego, haga click sobre el DC llamado cakephp-mysql-persistent, y luego click en la opción "View logs" tal cual se muestra en la imagen siguiente:
+
+![alt text](images/view_logs.png?raw=true)
+
+Observe el proceso de "Build" de la imagen (proceso donde se compila el codigo fuente extraido de GitHub, y se inyecta en una imagen que posteriormente es almacenada en el Registry de OpenShift).
+
+![alt text](images/view_logs.png?raw=true)
+
+Regrese a la pantalla de "Topology", y luego pulse el botón Open URL que se muestra en la imagen. Se abrira la aplicación WEB que ha desplegado.
+
+![alt text](images/open_url.png?raw=true)
+
+Regrese a la consola web de OpenShift y pulse sobre la opción "Project" en el panel izquierdo. En el recuadro del inventario, identifique todos los recursos que se desplegaron con la aplicación. Ingrese a cada uno de los recursos he identifiquelos. Note que junto con la base de datos se desplego un volumen persistente de 1GiB.
+
+Por ultimo, cierre la sesión web pulsando sobre el nombre de usuario en la esquina superior derecha de la consola web, y luego Log out.
