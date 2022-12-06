@@ -34,7 +34,9 @@ Ingrese a Administration > Cluster Settings en el panel izquierdo. Identifique l
 
 ![alt text](images/update_status.png?raw=true)
 
-Ingrese a la pestaña Cluster Operators. Identifique el nombre de los operadores y la versión. Como se ha mencionado durante el WorkShop, todas las funcionalidades del cluster estan contenerizadas y son gestionadas por los operadores del cluster. Adicional, la versión de **TODOS** los operadores deben coincidir con la versión de OpenShift (obtenida en el punto anterior). Si no coinciden, se considera que el cluster esta en proceso de actualización o transición de versión.
+Ingrese a la pestaña Cluster Operators. Identifique el nombre de los operadores y la versión de cada uno de ellos. 
+
+Como se ha mencionado durante el WorkShop, todas las funcionalidades del cluster estan contenerizadas y son gestionadas por los operadores del cluster. Adicional, la versión de **TODOS** los operadores deben coincidir con la versión de OpenShift (obtenida en el punto anterior). Si no coinciden, se considera que el cluster esta en proceso de actualización o transición de versión.
 
 ![alt text](images/clusteroperators.png?raw=true)
 
