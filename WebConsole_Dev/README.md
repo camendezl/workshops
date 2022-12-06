@@ -57,7 +57,7 @@ Luego, haga click sobre el DC llamado cakephp-mysql-persistent, y luego click en
 
 Observe el proceso de "Build" de la imagen (proceso donde se compila el codigo fuente extraido de GitHub, y se inyecta en una imagen que posteriormente es almacenada en el Registry de OpenShift).
 
-![alt text](images/view_logs.png?raw=true)
+![alt text](images/logs.png?raw=true)
 
 Regrese a la pantalla de "Topology", y luego pulse el botón Open URL que se muestra en la imagen. Se abrira la aplicación WEB que ha desplegado.
 
