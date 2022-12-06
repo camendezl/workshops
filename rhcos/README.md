@@ -61,7 +61,7 @@ $ journalctl -f
 
 Para finalizar el comando, presione las teclas Crtl + c.
 
-Puede verificar el estado de los unicos servicios del sistema mediante la ejecución de los siguientes comandos. Estos siempre se deben reportar como activos y en ejecución.
+Puede verificar el estado de los unicos servicios del sistema mediante la ejecución de los siguientes comandos. Estos siempre se deben reportar como activos y en ejecución. Para salir de la ejecución de los comandos, presione la tecla q.
 
 Kubelet:
 ```
