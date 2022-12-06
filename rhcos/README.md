@@ -61,17 +61,21 @@ $ journalctl -f
 
 Para finalizar el comando, presione las teclas Crtl + c.
 
-Puede verificar el estado de los unicos servicios del sistema mediante la ejecución de los siguientes comandos:
+Puede verificar el estado de los unicos servicios del sistema mediante la ejecución de los siguientes comandos. Estos siempre se deben reportar como activos y en ejecución.
 
 Kubelet:
 ```
 $ systemctl status kubelet
 ```
 
+![alt text](images/kubelet.png?raw=true)
+
 Crio:
 ```
 $ systemctl status crio
 ```
+
+![alt text](images/crio.png?raw=true)
 
 Cualquier contenedor que se ejecute en los nodos tiene que haber descargado su imagen correspondiente del Registry al disco local. Ejecute el siguiente comando para visualizar todas las imagenes descargadas en disco. Puede utilizar la barra de desplazamiento vertical para visualizar todos los registros. Note que el tamaño de las imagenes es relativamente pequeño (entre 300 y 500 MB).
 
