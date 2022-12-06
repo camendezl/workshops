@@ -47,7 +47,7 @@ $ tcpdump --version
 
 Si tiene dudas al respecto, comentelas con el instructor.
 
-Ahora que conoce que esta dentro del sistema Red Hat CoreOS, puede realizar algunas labores de inspección (recuerde que este acceso es proporcionado por Red Hat **solo** por temas relativos a troubleshooting y los cambios directos sobre el sistema no son soportados).
+Ahora que conoce que esta dentro del sistema Red Hat CoreOS (el sistema operativo de los nodos de OpenShift), puede realizar algunas labores de inspección (recuerde que este acceso es proporcionado por Red Hat **solo** por temas relativos a troubleshooting y los cambios directos sobre el sistema no son soportados).
 
 Como se menciono anteriormente, RHCOS esta basado tambien en RHEL 8, por lo tanto muchos de los comandos que se tienen en RHEL tambien funcionan aqui. Por ejemplo, ejecute el siguiente comando para ver el estado de todas las interfaces de red. Aunque puede ser una unica interface de red fisica, el listado de interfaces será largo debido a las redes SDN que OpenShift crea para poder operar correctamente.
 
