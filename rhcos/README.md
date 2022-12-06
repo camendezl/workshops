@@ -6,8 +6,6 @@ Ingrese a la consola web de OpenShift desde un navegador web a la URL https://co
 
 En el campo de usuario, coloque el usuario asignado + 100. Por ejemplo, si su usuario es user18, entonces ingrese con el usuario user118. El password es el mismo "r3dh4t1!". **IMPORTANTE**: Este usuario tiene permisos de administrador del cluster, **por lo tanto NO REALICE modificaciones no solicitadas en éste taller.** Recuerde que este laboratorio de OpenShift es necesario para los futuros talleres.
 
-![alt text](images/dashboard.png?raw=true)
-
 Ingrese a Compute > Nodes en el panel izquierdo. Identique en la pantalla la totalidad de nodos que componen el cluster, su rol (Master o Worker) y los recursos de hardware usados / disponibles.
 
 Haga click sobre cualquiera de los nodos, y luego haga click en la pestaña "Terminal".
