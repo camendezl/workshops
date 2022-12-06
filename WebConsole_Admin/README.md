@@ -28,6 +28,8 @@ Identifique los operadores instalados en el cluster de OpenShift ingresando a Op
 
 ![alt text](images/installedoperators.png?raw=true)
 
+Laa opciones "OperatorHub" e "Installed Operators" son opciones exclusivas al rol de los usuarios administradores, y son dichos usuarios los unicos con acceso para navegar e instalar operadores directamente del catalogo. Los operadores pueden ser consumidos vía "self service" por parte de los usuarios con rol de desarrollador.
+
 Ingrese a Administration > Cluster Settings en el panel izquierdo. Identifique la version de OpenShift desplegada en el cluster. **¿Encuentra versiones disponibles para instalar?**
 
 ![alt text](images/update_status.png?raw=true)
