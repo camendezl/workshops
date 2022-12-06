@@ -85,4 +85,6 @@ Puede visualizar logs en tiempo real adicionando "-f" al comando:
 $ crictl logs -f ID
 ```
 
+El comando anterior finaliza presionando Crtl + c.
+
 Finalice la sesión haciendo click sobre el nombre del usuario en la esquina superior derecha de la pantalla, y luego "Log out".
