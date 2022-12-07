@@ -4,13 +4,13 @@ Ingrese a la consola web de OpenShift desde un navegador web a la URL https://co
 
 En el campo de usuario, coloque el usuario asignado + 100. Por ejemplo, si su usuario es user18, entonces ingrese con el usuario user118. El password es el mismo "r3dh4t1!". **IMPORTANTE**: Este usuario tiene permisos de administrador del cluster, **por lo tanto NO REALICE modificaciones no solicitadas en éste taller.** Recuerde que este laboratorio de OpenShift es necesario para los futuros talleres.
 
-Ingrese a la opción Home > Projects del panel izquierdo, y busque el proyecto openshift-logging. Este proyecto no debe exitir aun debido a que es creado automaticamente por el operador del servicio Red Hat OpenShift logging.
+Ingrese a la opción Operators > Projects del panel izquierdo, y busque el proyecto openshift-logging. Este proyecto no debe exitir aun debido a que es creado automaticamente por el operador del servicio Red Hat OpenShift logging.
 
 ![alt text](images/without_project.png?raw=true)
 
 Debido a que este servicio solamente puede ser desplegado una vez en el cluster (solo puede haber una instancia de OpenShift Logging), solicite al instructor presentar pantalla y realizar el despliegue del operador de manera que todos los estudiantes este sincronizados en las actividades.
 
-El instructor en este punto debe ingresar a Home > OperatorHub y buscar el Red Hat OpenShift Logging operator. Luego procedera con la instalación del mismo acorde a las buenas practicas.
+El instructor en este punto debe ingresar a Operators > OperatorHub y buscar el Red Hat OpenShift Logging operator. Luego procedera con la instalación del mismo acorde a las buenas practicas.
 
 ![alt text](images/install_operator.png?raw=true)
 
@@ -32,6 +32,19 @@ Pulse sobre el nombre del POD, y luego sobre la pestaña Logs. Debera visualizar
 
 ![alt text](images/logs.png?raw=true)
 
-En este punto, el pod que esta en ejecución es el operador que tiene la logica del funcionamiento del servicio de logging, y esta a la espera de indicaciones para desplegar el cluster del stack EFK (ElasticSearch - Fluentd - Kibana).
+En este punto, el pod que esta en ejecución representa al operador que tiene la logica del funcionamiento del servicio de logging, y esta a la espera de indicaciones para desplegar el cluster del stack EFK (ElasticSearch - Fluentd - Kibana).
 
-Regrese al proyecto, he ingrese a la pestaña "Workloads" nuevamente. Solicite al instructor crear la 
+Pulse sobre Operators > Install Operators, y en el campo "Projects" garantice que este seleccionada la opción "All projects". Localice el operador "Red Hat OpenShift Logging" (desplegado por el instructor) y luego pulse sobre su nombre. Ingrese entonces a la pestaña "Subscription". Verifique las siguientes opciones sin hacer cambios:
+
+* Verifique los canales a los que puede suscribir dicho operador. Esto es util para forza el despliegue de un operador e una versión especifica.
+* Verifique cual es la estrategia para la instalación de actualizaciones. Cuando esta seleccionada la opción "Automatic", el operador junto con sus componentes administrados seran actualizados luego que una nueva versión ha sido publicada en el canal suscrito.
+* Estado del operador. En esta sección se informa si esta correctamente instalado y si tienen actualizaciones pendientes.
+* localice el catalogo fuente que proporciona dicho operador. 
+
+![alt text](images/subs.png?raw=true)
+
+Cambie a la pestaña "All instances". No deberia existir alguna en este punto.
+
+Regrese al proyecto, he ingrese a la pestaña "Workloads" nuevamente. Solicite al instructor la creación de la instancia del servicio de logging, quien a su vez deb garantizar que todos los participantes esten en éste mismo punto.
+
+
