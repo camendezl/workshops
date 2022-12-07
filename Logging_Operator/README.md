@@ -13,6 +13,7 @@ Ingrese a la opción Operators > Projects del panel izquierdo, y busque el proye
 Debido a que este servicio solamente puede ser desplegado una vez en el cluster (solo puede haber una instancia de OpenShift Logging), solicite al instructor presentar pantalla y realizar el despliegue del operador de manera que todos los estudiantes este sincronizados en las actividades.
 
 **--- Aqui inician las tareas que ejecuta el Instructor ---** 
+
 El instructor en este punto debe ingresar a Operators > OperatorHub y buscar el Red Hat OpenShift Logging operator. Luego procedera con la instalación del mismo acorde a las buenas practicas.
 
 ![alt text](images/install_operator.png?raw=true)
@@ -54,7 +55,11 @@ Cambie a la pestaña "All instances". No deberia existir alguna en este punto.
 
 Regrese al proyecto, he ingrese a la pestaña "Workloads" nuevamente. Solicite al instructor la creación de la instancia del servicio de logging, quien a su vez debe garantizar que todos los participantes esten en éste mismo punto.
 
+**--- Aqui inician las tareas que ejecuta el Instructor ---** 
+
 El instructor ahora debe ingresar a Operators > Installed Operators e ingresar al Red Hat OpenShift Logging operator. Luego procedera con el despliegue de una instancia del Cluster Logging. 
+
+**--- Aqui terminan las tareas que ejecuta el Instructor ---** 
 
 Una vez se confirme la creación de la instancia, verifique los recursos creados por el operador en la pestaña "Workloads". Intente identificar los siguientes recursos de OpenShift que aparecen en pantalla con su nombre corto:
 
