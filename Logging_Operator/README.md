@@ -1,4 +1,4 @@
-# Instalación y funcionamiento de un Operador del Catalogo de OpenShift
+# Instalación y funcionamiento de un Operador del Catálogo de OpenShift
 
 ## Red Hat OpenShift Logging Operator
 
