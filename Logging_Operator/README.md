@@ -45,6 +45,16 @@ Pulse sobre Operators > Install Operators, y en el campo "Projects" garantice qu
 
 Cambie a la pestaña "All instances". No deberia existir alguna en este punto.
 
-Regrese al proyecto, he ingrese a la pestaña "Workloads" nuevamente. Solicite al instructor la creación de la instancia del servicio de logging, quien a su vez deb garantizar que todos los participantes esten en éste mismo punto.
+Regrese al proyecto, he ingrese a la pestaña "Workloads" nuevamente. Solicite al instructor la creación de la instancia del servicio de logging, quien a su vez debe garantizar que todos los participantes esten en éste mismo punto.
 
+El instructor ahora debe ingresar a Operators > Installed Operators e ingresar al Red Hat OpenShift Logging operator. Luego procedera con el despliegue de una instancia del Cluster Logging. 
+
+Una vez se confirme la creación de la instancia, verifique los recursos creados por el operador en la pestaña "Workloads". Intente identificar los siguientes recursos de OpenShift que aparecen en pantalla con su nombre corto:
+
+* CronJobs.
+* Deployments.
+* DeamonSet.
+* Pods.
+
+![alt text](images/resources.png?raw=true)
 
