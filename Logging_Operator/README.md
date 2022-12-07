@@ -6,7 +6,7 @@ Ingrese a la consola web de OpenShift desde un navegador web a la URL https://co
 
 En el campo de usuario, coloque el usuario asignado + 100. Por ejemplo, si su usuario es user18, entonces ingrese con el usuario user118. El password es el mismo "r3dh4t1!". **IMPORTANTE**: Este usuario tiene permisos de administrador del cluster, **por lo tanto NO REALICE modificaciones no solicitadas en éste taller.** Recuerde que este laboratorio de OpenShift es necesario para los futuros talleres.
 
-Ingrese a la opción Operators > Projects del panel izquierdo, y busque el proyecto openshift-logging. Este proyecto no debe exitir aun debido a que es creado automaticamente por el operador del servicio Red Hat OpenShift logging.
+Ingrese a la opción Home > Projects del panel izquierdo, y busque el proyecto openshift-logging. Este proyecto no debe exitir aun debido a que es creado automaticamente por el operador del servicio Red Hat OpenShift logging.
 
 ![alt text](images/without_project.png?raw=true)
 
