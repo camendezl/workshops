@@ -20,7 +20,9 @@ Luego de la confirmación de instalado, verifique nuevamente que se haya creado 
 
 ![alt text](images/project.png?raw=true)
 
-Luego pulse sobre el nombre del proyecto, he ingrese a la pestaña "Workloads". Pulse sobre el deployment llamado "cluster-logging-operator". Identifique el nombre y la cantidad de replicas que se estan ejecutando de este Deployment. Tambien podra identificar el nombre del "Service" y los puertos de escucha tanto del servicio como de los PODs. Recuerde que los recursos "Services" son el punto unico de entrada de trafico hacia los PODs y funcionan como un balanceador de carga, escuchando en un puerto e ip principal, y redirigiendo el trafico a los PODs que este balanceados.
+Luego pulse sobre el nombre del proyecto, y verifique en el campo de inventario los recursos que se encuentran desplegados al momento. Navegue por cada uno de ellos para ver el detalle.
+
+Ingrese a la pestaña "Workloads" dentro del proyecto. Pulse sobre el deployment llamado "cluster-logging-operator". Identifique el nombre y la cantidad de replicas que se estan ejecutando de este Deployment. Tambien podra identificar el nombre del "Service" y los puertos de escucha tanto del servicio como de los PODs. Recuerde que los recursos "Services" son el punto unico de entrada de trafico hacia los PODs y funcionan como un balanceador de carga, escuchando en un puerto e ip principal, y redirigiendo el trafico a los PODs que este balanceados.
 
 ![alt text](images/workloads.png?raw=true)
 
@@ -58,7 +60,7 @@ Una vez se confirme la creación de la instancia, verifique los recursos creados
 
 ![alt text](images/resources.png?raw=true)
 
-En este punto, el servicio de Logging ya se encuentra en operación.
+En este punto, el servicio de Logging ya se encuentra en operación. Ingrese nuevamente al proyecto y verifique nuevamente el campo de Inventario. Navegue por cada uno de ellos para conocer el detalle de todos los recursos desplegados.
 
 Cambie a la perspectiva "Developer", seleccione la opción "Topology" del panel de la izquierda, y seleccione el proyecto "openshift-logging". Note la agrupación de los recursos que realiza de manera automatica el operador Red Hat OpenShift Logging.
 
