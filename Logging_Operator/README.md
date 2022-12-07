@@ -60,7 +60,7 @@ Una vez se confirme la creación de la instancia, verifique los recursos creados
 
 En este punto, el servicio de Logging ya se encuentra en operación.
 
-Cambie a la perspectiva "Developer", seleccione la opción "Topology" del panel de la izquierda, y seleccione el proyecto "openshift-logging". Note la agrupación que realiza de manera automatica el operador Red Hat OpenShift Logging.
+Cambie a la perspectiva "Developer", seleccione la opción "Topology" del panel de la izquierda, y seleccione el proyecto "openshift-logging". Note la agrupación de los recursos que realiza de manera automatica el operador Red Hat OpenShift Logging.
 
 ![alt text](images/topology.png?raw=true)
 
