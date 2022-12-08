@@ -34,7 +34,7 @@ Para crear los NetworkPolicies es necesario tener presente lo siguiente:
 * Tener claro el puerto por el que escuchan los servicios asociados a cada DeploymentConfig.
 * Tener claro como es el flujo de la información.
 
-Ingrese a Workloads > DeploymentConfig y a Networking > Services para obtener la información correspondiente, y la siguiente grafica lo guiará con el flujo de la información:
+Ingrese a Workloads > DeploymentConfig y a Networking > Services para obtener la información correspondiente, y la siguiente grafica lo guiará con el flujo de trafico dentro dentro de OpenShift:
 
 ![alt text](images/flow_app.png?raw=true)
 
@@ -58,8 +58,14 @@ En este punto, debera tener 2 NetworkPolicies tal como se muestra a continuació
 
 ![alt text](images/nps.png?raw=true)
 
-Vuelva a la pagina web de la aplicación y verifique que ésta siga operando. Luego, vuelva a conectarse al POD de mysql y verifique que este POD ya no puede conectarse con el puerto de servicio del frontend. Para ello, pulse en Workloads > Pods, y luego sobre el POD de mysql que se encuentra en estado Running. Luego pulse sobre la pestaña terminal para conectarse a dicho POD. En la terminal que se despliegua, consulte el puerto del servicio del frontend con el comando curl, tal cual se visualiza en la imagen. Observe que el servicio que antes respondia, ua no lo hace:
+Vuelva a la pagina web de la aplicación y verifique que ésta siga operando. Nuevamente, vuelva a conectarse al POD de mysql y verifique que este POD ya no puede conectarse con el puerto de servicio del frontend. Para ello, pulse en Workloads > Pods, y luego sobre el POD de mysql que se encuentra en estado Running. Luego pulse sobre la pestaña terminal para conectarse a dicho POD. En la terminal que se despliegua, consulte el puerto del servicio del frontend con el comando curl, tal cual se visualiza en la imagen. Observe que el servicio que antes respondia, ya no lo hace:
 
 ![alt text](images/no_con.png?raw=true)
+
+**Nota:** Éste bloqueo de trafico no solamente aplica para el trafico que va desde backend a forntend, sino a todo flujo de paquetes diferente al que se muestra en la grafica de flujo trafico. Ello debido a la regla que indica:
+
+* Para aislar uno o más pods en un proyecto, puede crear objetos NetworkPolicy en ese proyecto para indicar las conexiones entrantes permitidas.
+
+Dicho lo anterior y teniendo en cuenta que se generaron dos NetworkPolicies, cada una de ellos habilitando el trafico necesario de cada microservicio, todo el trafico que no se especificó será rechazado.
 
 Finalice la sesión haciendo click sobre el nombre del usuario en la esquina superior derecha de la pantalla, y luego "Log out".
