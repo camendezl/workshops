@@ -62,7 +62,7 @@ Vuelva a la pagina web de la aplicación y verifique que ésta siga operando. Nu
 
 ![alt text](images/no_con.png?raw=true)
 
-**Nota:** Éste bloqueo de trafico no solamente aplica para el trafico que va desde backend a forntend, sino a todo flujo de paquetes diferente al que se muestra en la grafica de flujo trafico. Ello debido a la regla que indica:
+**Nota:** Éste bloqueo de trafico no solamente aplica para el trafico que va desde backend a frontend, sino a todo flujo de paquetes diferente al que se muestra en la grafica de flujo trafico. Ello debido a la regla que indica:
 
 * Para aislar uno o más pods en un proyecto, puede crear objetos NetworkPolicy en ese proyecto para indicar las conexiones entrantes permitidas.
 
