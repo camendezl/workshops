@@ -18,3 +18,11 @@ Abra la URL de la ruta para verificar que la aplicación web se esta ejecutando 
 
 ![alt text](images/app.png?raw=true)
 
+Vuelva a la consola web de OpenShift, y cambie a la perspectiva de administrador (sin cambiar de usuario). Luego seleccione Networking > NetworkPolicies. Asegure que se encuentre seleccionado el proyecto que creo hace unos instantes.
+
+![alt text](images/np.png?raw=true)
+
+Allí podra identificar dos networkpolicies creados por defecto, los cuales son nombrados como allow-from-all-namespaces y allow-from-ingress-namespace. Estos se crean con la creación del proyecto y se puede eliminar debido a que no son necesarios (se permite todo el trafico por defecto si no hay un networkpolicy). Para eliminarlos, seleccione los 3 puntos de la derecha, y pulse "Delete NetworkPolicy". Repita el procedimiento con el segundo NetworkPolicy.
+
+![alt text](images/delete.png?raw=true)
+
