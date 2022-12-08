@@ -54,5 +54,12 @@ Vuelva a Networking > NetworkPolicies y pulse en el botón "Create NetworkPolicy
 ![alt text](images/2_ingress.png?raw=true)
 ![alt text](images/2_ports.png?raw=true)
 
+En este punto, debera tener 2 NetworkPolicies tal como se muestra a continuación:
 
+![alt text](images/nps.png?raw=true)
 
+Vuelva a la pagina web de la aplicación y verifique que ésta siga operando. Luego, vuelva a conectarse al POD de mysql y verifique que este POD ya no puede conectarse con el puerto de servicio del frontend. Para ello, pulse en Workloads > Pods, y luego sobre el POD de mysql que se encuentra en estado Running. Luego pulse sobre la pestaña terminal para conectarse a dicho POD. En la terminal que se despliegua, consulte el puerto del servicio del frontend con el comando curl, tal cual se visualiza en la imagen. Observe que el servicio que antes respondia, ua no lo hace:
+
+![alt text](images/no_con.png?raw=true)
+
+Finalice la sesión haciendo click sobre el nombre del usuario en la esquina superior derecha de la pantalla, y luego "Log out".
