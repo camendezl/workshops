@@ -48,4 +48,11 @@ Ahora procederemos a bloquer el trafico innecesario. Vuelva a Networking > Netwo
 ![alt text](images/1_ingress.png?raw=true)
 ![alt text](images/1_ports.png?raw=true)
 
-Vuelva a Networking > NetworkPolicies y pulse en el botón "Create NetworkPolicy". 
+Vuelva a Networking > NetworkPolicies y pulse en el botón "Create NetworkPolicy". Esta vez vamos a proteger el backend, por lo que deberá llenar el formularion como se muestra a continuación.
+
+![alt text](images/2_podselec.png?raw=true)
+![alt text](images/2_ingress.png?raw=true)
+![alt text](images/2_ports.png?raw=true)
+
+
+
