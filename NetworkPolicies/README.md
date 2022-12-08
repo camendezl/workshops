@@ -14,7 +14,7 @@ Espere a que se termine de desplegar la applicación por completo (cuando los do
 
 ![alt text](images/success.png?raw=true)
 
-Abra la URL de la ruta para verificar que la aplicación web se esta ejecutando correctamente.
+Abra la URL de la ruta en una nueva pestaña para verificar que la aplicación web se esta ejecutando correctamente. No cierre esta pestaña, dado que la necesitaremos mas adelante.
 
 ![alt text](images/app.png?raw=true)
 
@@ -25,4 +25,14 @@ Vuelva a la consola web de OpenShift, y cambie a la perspectiva de administrador
 Allí podra identificar dos networkpolicies creados por defecto, los cuales son nombrados como allow-from-all-namespaces y allow-from-ingress-namespace. Estos se crean con la creación del proyecto y se puede eliminar debido a que no son necesarios (se permite todo el trafico por defecto si no hay un networkpolicy). Para eliminarlos, seleccione los 3 puntos de la derecha, y pulse "Delete NetworkPolicy". Repita el procedimiento con el segundo NetworkPolicy.
 
 ![alt text](images/delete.png?raw=true)
+
+Vuelva a la pestaña donde tiene la aplicación web, y refresque con F5 para garantizar que la aplicación continua respondiendo peticiones.
+
+Para crear los NetworkPolicies es necesario tener presente lo siguiente:
+
+* Tener claro el nombre de los DeploymentConfig de cada microservicio desplegado en el proyecto.
+* Tener claro el puerto por el que escuchan los servicios asociados a cada DeploymentConfig.
+* Tener claro como es el flujo de la información.
+
+![alt text](images/flow_app.png?raw=true)
 
