@@ -34,5 +34,18 @@ Para crear los NetworkPolicies es necesario tener presente lo siguiente:
 * Tener claro el puerto por el que escuchan los servicios asociados a cada DeploymentConfig.
 * Tener claro como es el flujo de la información.
 
+Ingrese a Workloads > DeploymentConfig y a Networking > Services para obtener la información correspondiente, y la siguiente grafica lo guiará con el flujo de la información:
+
 ![alt text](images/flow_app.png?raw=true)
 
+Antes de generar los NetworkPolicies para limitar el trafico al extrictamente necesario, realicemos una prueba de conectividad que no es necesaria y será bloqueada por la creación de los NetworkPolicies. Dicha conección es desde el POD de mysql hacia el frontend. Para ello, pulse en Workloads > Pods, y luego sobre el POD de mysql que se encuentra en estado Running. Luego pulse sobre la pestaña terminal para conectarse a dicho POD. En la terminal que se despliegua, consulte el puerto del servicio del frontend con el comando curl, tal cual se visualiza en la imagen. Observe que el servicio responde:
+
+![alt text](images/curl_ini.png?raw=true)
+
+Ahora procederemos a bloquer el trafico innecesario. Vuelva a Networking > NetworkPolicies y pulse en el botón "Create NetworkPolicy". Dado que inicialmente vamos a proteger el backend (la base de datos), llene el formulario como se muestra en la imagen siguiente:
+
+![alt text](images/1_podselec.png?raw=true)
+![alt text](images/1_ingress.png?raw=true)
+![alt text](images/1_ports.png?raw=true)
+
+Vuelva a Networking > NetworkPolicies y pulse en el botón "Create NetworkPolicy". 
